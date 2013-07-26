@@ -1,0 +1,314 @@
+<rdf:RDF
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:ER="http://www.vstu.org/onto/ER/20060408/ER.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.vstu.org/onto/PC/20060408/PC.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:repository="http://www.vstu.org/onto/resources/20060408/repository.owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:LM="http://www.vstu.org/onto/LM/20060408/LM.owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://www.vstu.org/onto/PC/20060408/PC.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.daml.org/rules/proposal/swrl.owl"/>
+    <owl:imports rdf:resource="http://www.daml.org/rules/proposal/swrlb.owl"/>
+    <owl:imports rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl"/>
+    <owl:imports rdf:resource="http://www.vstu.org/onto/resources/20060408/repository.owl"/>
+    <owl:imports rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="PersonalCollection"/>
+  <owl:ObjectProperty rdf:ID="hasResourceByExpirience">
+    <rdfs:range rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#ER"/>
+    <rdfs:domain rdf:resource="#PersonalCollection"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResourceByLanguage">
+    <rdfs:domain rdf:resource="#PersonalCollection"/>
+    <rdfs:range rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#ER"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasUser">
+    <rdfs:range rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#User"/>
+    <rdfs:domain rdf:resource="#PersonalCollection"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResourceByConcepts">
+    <rdfs:range rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#ER"/>
+    <rdfs:domain rdf:resource="#PersonalCollection"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResource">
+    <rdfs:domain rdf:resource="#PersonalCollection"/>
+    <rdfs:range rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#ER"/>
+  </owl:ObjectProperty>
+  <swrl:Variable rdf:ID="concept2"/>
+  <swrl:Imp rdf:ID="Rule-Language">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2>
+              <swrl:Variable rdf:ID="r"/>
+            </swrl:argument2>
+            <swrl:argument1>
+              <swrl:Variable rdf:ID="c"/>
+            </swrl:argument1>
+            <swrl:propertyPredicate rdf:resource="#hasResourceByLanguage"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument1>
+                  <swrl:Variable rdf:ID="u"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                  <swrl:Variable rdf:ID="l"/>
+                </swrl:argument2>
+                <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#hasLanguage"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#hasLanguage"/>
+                    <swrl:argument2 rdf:resource="#l"/>
+                    <swrl:argument1 rdf:resource="#r"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="#hasUser"/>
+            <swrl:argument2 rdf:resource="#u"/>
+            <swrl:argument1 rdf:resource="#c"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <LM:User rdf:ID="User_2">
+    <LM:hasAssessment rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#advanced"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Enum_1"/>
+    <LM:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_1"/>
+    <LM:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </LM:User>
+  <swrl:Imp rdf:ID="Rule-hasResource">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="#r"/>
+            <swrl:argument1 rdf:resource="#c"/>
+            <swrl:propertyPredicate rdf:resource="#hasResource"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="#r"/>
+            <swrl:argument1 rdf:resource="#c"/>
+            <swrl:propertyPredicate rdf:resource="#hasResourceByLanguage"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument1 rdf:resource="#c"/>
+                    <swrl:argument2 rdf:resource="#r"/>
+                    <swrl:propertyPredicate rdf:resource="#hasResourceByConcepts"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="#hasResourceByExpirience"/>
+                <swrl:argument1 rdf:resource="#c"/>
+                <swrl:argument2 rdf:resource="#r"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <LM:User rdf:ID="User_1">
+    <LM:hasAssessment rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <LM:hasCurrentKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#ProgrammingStrategies_1"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#StructuredDataType_1"/>
+    <LM:hasCurrentKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#BasicAlgorithmicStructures_1"/>
+    <LM:hasCurrentKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#ObjectOrientedProgramming_5"/>
+    <LM:hasCurrentKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#StructuredProgramming_8"/>
+    <LM:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#String_1"/>
+    <LM:hasCurrentKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_1"/>
+    <LM:hasAssessment rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Char_1"/>
+    <LM:hasObjectiveKnowledge rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_1"/>
+  </LM:User>
+  <swrl:Variable rdf:ID="concept1"/>
+  <PersonalCollection rdf:ID="PersonalCollection_2">
+    <hasUser rdf:resource="#User_2"/>
+  </PersonalCollection>
+  <swrl:Variable rdf:ID="user"/>
+  <swrl:Imp rdf:ID="Rule-Concept">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Filter by objective concepts</rdfs:comment>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:argument2 rdf:resource="#concept1"/>
+                <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#hasObjectiveKnowledge"/>
+                <swrl:argument1 rdf:resource="#user"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest>
+                  <swrl:AtomList>
+                    <rdf:first>
+                      <swrl:IndividualPropertyAtom>
+                        <swrl:argument2>
+                          <swrl:Variable rdf:ID="n1"/>
+                        </swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#isSynonymOf"/>
+                        <swrl:argument1 rdf:resource="#concept1"/>
+                      </swrl:IndividualPropertyAtom>
+                    </rdf:first>
+                    <rdf:rest>
+                      <swrl:AtomList>
+                        <rdf:first>
+                          <swrl:IndividualPropertyAtom>
+                            <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#isSynonymOf"/>
+                            <swrl:argument2>
+                              <swrl:Variable rdf:ID="n2"/>
+                            </swrl:argument2>
+                            <swrl:argument1 rdf:resource="#concept2"/>
+                          </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                          <swrl:AtomList>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            <rdf:first>
+                              <swrl:SameIndividualAtom>
+                                <swrl:argument1 rdf:resource="#n1"/>
+                                <swrl:argument2 rdf:resource="#n2"/>
+                              </swrl:SameIndividualAtom>
+                            </rdf:first>
+                          </swrl:AtomList>
+                        </rdf:rest>
+                      </swrl:AtomList>
+                    </rdf:rest>
+                  </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument2 rdf:resource="#concept2"/>
+                    <swrl:argument1 rdf:resource="#r"/>
+                    <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#hasConcept"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument1 rdf:resource="#c"/>
+            <swrl:propertyPredicate rdf:resource="#hasUser"/>
+            <swrl:argument2 rdf:resource="#user"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="#r"/>
+            <swrl:propertyPredicate rdf:resource="#hasResourceByConcepts"/>
+            <swrl:argument1 rdf:resource="#c"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="e"/>
+  <PersonalCollection rdf:ID="PersonalCollection_1">
+    <hasUser rdf:resource="#User_1"/>
+  </PersonalCollection>
+  <swrl:Imp rdf:ID="Rule-Expirience">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:IndividualPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#hasAssessment"/>
+                <swrl:argument1 rdf:resource="#u"/>
+                <swrl:argument2 rdf:resource="#e"/>
+              </swrl:IndividualPropertyAtom>
+            </rdf:first>
+            <rdf:rest>
+              <swrl:AtomList>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                  <swrl:IndividualPropertyAtom>
+                    <swrl:argument2 rdf:resource="#e"/>
+                    <swrl:argument1 rdf:resource="#r"/>
+                    <swrl:propertyPredicate rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#hasExpirience"/>
+                  </swrl:IndividualPropertyAtom>
+                </rdf:first>
+              </swrl:AtomList>
+            </rdf:rest>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument1 rdf:resource="#c"/>
+            <swrl:argument2 rdf:resource="#u"/>
+            <swrl:propertyPredicate rdf:resource="#hasUser"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="#hasResourceByExpirience"/>
+            <swrl:argument1 rdf:resource="#c"/>
+            <swrl:argument2 rdf:resource="#r"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 2.2, Build 322)  http://protege.stanford.edu -->

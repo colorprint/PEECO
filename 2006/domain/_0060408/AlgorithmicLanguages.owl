@@ -1,0 +1,455 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:concept="http://www.vstu.org/onto/concept/20060408/concept.owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:LM="http://www.vstu.org/onto/LM/20060408/LM.owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#"
+  xml:base="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Array">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StructuredDataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Char">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StandardDataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="String">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="OneDimensionalArray"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Unsigned">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StandardDataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Vector">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#OneDimensionalArray"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Constants">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="AlgorithmicLanguages"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ProgrammingStrategies">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#AlgorithmicLanguages"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MultidimensionalArray">
+    <rdfs:subClassOf rdf:resource="#Array"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pointer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="DataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuredDataType">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#AlgorithmicLanguages">
+    <rdfs:subClassOf rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#Concept"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ObjectOrientedProgramming">
+    <rdfs:subClassOf rdf:resource="#ProgrammingStrategies"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Enum">
+    <rdfs:subClassOf rdf:resource="#StructuredDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Union">
+    <rdfs:subClassOf rdf:resource="#StructuredDataType"/>
+  </owl:Class>
+  <owl:Class rdf:about="#StandardDataType">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Operators">
+    <rdfs:subClassOf rdf:resource="#AlgorithmicLanguages"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StructuredProgramming">
+    <rdfs:subClassOf rdf:resource="#ProgrammingStrategies"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Double">
+    <rdfs:subClassOf rdf:resource="#StandardDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Long">
+    <rdfs:subClassOf rdf:resource="#StandardDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Structure">
+    <rdfs:subClassOf rdf:resource="#StructuredDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnumeratedDataType">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DataType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Variables">
+    <rdfs:subClassOf rdf:resource="#AlgorithmicLanguages"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Short">
+    <rdfs:subClassOf rdf:resource="#StandardDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Float">
+    <rdfs:subClassOf rdf:resource="#StandardDataType"/>
+  </owl:Class>
+  <owl:Class rdf:about="#DataType">
+    <rdfs:subClassOf rdf:resource="#AlgorithmicLanguages"/>
+  </owl:Class>
+  <owl:Class rdf:about="#OneDimensionalArray">
+    <rdfs:subClassOf rdf:resource="#Array"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Int">
+    <rdfs:subClassOf rdf:resource="#StandardDataType"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BasicAlgorithmicStructures">
+    <rdfs:subClassOf rdf:resource="#AlgorithmicLanguages"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasLanguage"/>
+  <rdf:Property rdf:about="http://www.vstu.org/onto/concept/20060408/concept.owl#hasConceptName"/>
+  <owl:DatatypeProperty rdf:ID="hasTitle">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <StructuredDataType rdf:ID="StructuredDataType_1">
+    <concept:hasTitle xml:lang="ru">Структурированные типы данных</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#StructuredDataType_1"/>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >StructuredDataType</concept:hasConceptName>
+    <hasTitle xml:lang="ru">Структурированные типы данных</hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </StructuredDataType>
+  <Int rdf:ID="Int_1">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Int</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <concept:isSynonymOf rdf:resource="#Int_1"/>
+  </Int>
+  <DataType rdf:ID="DataType_2">
+    <hasTitle xml:lang="ru">Типы данных</hasTitle>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DataType</concept:hasConceptName>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+    <concept:hasTitle xml:lang="ru">Тип данных</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf>
+      <DataType rdf:ID="DataType_1">
+        <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >DataType</concept:hasConceptName>
+        <hasTitle xml:lang="en">Data types</hasTitle>
+        <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:isSynonymOf rdf:resource="#DataType_1"/>
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Datatype</concept:hasTitle>
+      </DataType>
+    </concept:isSynonymOf>
+  </DataType>
+  <Long rdf:ID="Long_1">
+    <concept:isSynonymOf rdf:resource="#Long_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Long</concept:hasTitle>
+  </Long>
+  <BasicAlgorithmicStructures rdf:ID="BasicAlgorithmicStructures_1">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BasicAlgorithmicStructures</concept:hasConceptName>
+    <concept:isSynonymOf rdf:resource="#BasicAlgorithmicStructures_1"/>
+    <concept:hasTitle xml:lang="ru">Основные алгоритмические структуры</concept:hasTitle>
+  </BasicAlgorithmicStructures>
+  <Int rdf:ID="Int_2">
+    <concept:isSynonymOf rdf:resource="#Int_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle xml:lang="ru">Целое</concept:hasTitle>
+  </Int>
+  <ObjectOrientedProgramming rdf:ID="ObjectOrientedProgramming_5">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf>
+      <ObjectOrientedProgramming rdf:ID="ObjectOrientedProgramming_1">
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+        <concept:hasTitle xml:lang="ru">ООП</concept:hasTitle>
+        <concept:isSynonymOf rdf:resource="#ObjectOrientedProgramming_1"/>
+      </ObjectOrientedProgramming>
+    </concept:isSynonymOf>
+    <concept:hasTitle xml:lang="ru">Объектно-ориентированное программирование</concept:hasTitle>
+  </ObjectOrientedProgramming>
+  <Array rdf:ID="Array_2">
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+    <hasTitle xml:lang="ru">Массив</hasTitle>
+    <concept:hasTitle xml:lang="ru">Массив</concept:hasTitle>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Array</concept:hasConceptName>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf>
+      <Array rdf:ID="Array_1">
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:hasTitle xml:lang="en">Array</concept:hasTitle>
+        <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+        <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Array</concept:hasConceptName>
+        <concept:isSynonymOf rdf:resource="#Array_1"/>
+        <hasTitle xml:lang="en">Array</hasTitle>
+      </Array>
+    </concept:isSynonymOf>
+  </Array>
+  <StructuredDataType rdf:ID="StructuredDataType_2">
+    <concept:hasTitle xml:lang="en">Structured Data Type</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <concept:isSynonymOf rdf:resource="#StructuredDataType_1"/>
+  </StructuredDataType>
+  <MultidimensionalArray rdf:ID="MultidimensionalArray_2">
+    <concept:isSynonymOf>
+      <MultidimensionalArray rdf:ID="MultidimensionalArray_1">
+        <hasTitle xml:lang="en">Multidimensional Array</hasTitle>
+        <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+        <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >MultidimensionalArray</concept:hasConceptName>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+        <concept:isSynonymOf rdf:resource="#MultidimensionalArray_1"/>
+        <concept:hasTitle xml:lang="ru">Многомерный массив</concept:hasTitle>
+      </MultidimensionalArray>
+    </concept:isSynonymOf>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MultidimensionalArray</concept:hasConceptName>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <concept:hasTitle xml:lang="en">Multidimensional Array</concept:hasTitle>
+    <hasTitle xml:lang="ru">Многомерный массив</hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+  </MultidimensionalArray>
+  <Char rdf:ID="Char_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle xml:lang="ru">Символ</concept:hasTitle>
+    <concept:isSynonymOf>
+      <Char rdf:ID="Char_1">
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Char</concept:hasTitle>
+        <concept:isSynonymOf rdf:resource="#Char_1"/>
+      </Char>
+    </concept:isSynonymOf>
+  </Char>
+  <Union rdf:ID="Union_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf>
+      <Union rdf:ID="Union_1">
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Union</concept:hasTitle>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:isSynonymOf rdf:resource="#Union_1"/>
+      </Union>
+    </concept:isSynonymOf>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Объединение</concept:hasTitle>
+  </Union>
+  <Variables rdf:ID="Variables_1">
+    <concept:isSynonymOf rdf:resource="#Variables_1"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Variables</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+  </Variables>
+  <Short rdf:ID="Short_1">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Short</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Short_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+  </Short>
+  <Int rdf:ID="Int_3">
+    <concept:isSynonymOf rdf:resource="#Int_1"/>
+    <concept:hasTitle xml:lang="ru">Целочисленный тип</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </Int>
+  <Operators rdf:ID="Operators_1">
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Operators</concept:hasConceptName>
+    <hasTitle xml:lang="en">Operators</hasTitle>
+    <concept:isSynonymOf rdf:resource="#Operators_1"/>
+    <concept:hasTitle xml:lang="ru">Оператор</concept:hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </Operators>
+  <StructuredProgramming rdf:ID="StructuredProgramming_7">
+    <concept:isSynonymOf>
+      <StructuredProgramming rdf:ID="StructuredProgramming_1">
+        <concept:hasTitle xml:lang="ru">Структурное программирование</concept:hasTitle>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+        <concept:isSynonymOf rdf:resource="#StructuredProgramming_1"/>
+      </StructuredProgramming>
+    </concept:isSynonymOf>
+    <concept:hasTitle xml:lang="en">Structured Programming</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+  </StructuredProgramming>
+  <Constants rdf:ID="Constants_2">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Константы</concept:hasTitle>
+    <concept:isSynonymOf>
+      <Constants rdf:ID="Constants_1">
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Constant</concept:hasTitle>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:isSynonymOf rdf:resource="#Constants_1"/>
+      </Constants>
+    </concept:isSynonymOf>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </Constants>
+  <Double rdf:ID="Double_1">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Double</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Double_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+  </Double>
+  <Unsigned rdf:ID="Unsigned_1">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Unsigned</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Unsigned_1"/>
+  </Unsigned>
+  <StandardDataType rdf:ID="StandardDataType_2">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Стандартный тип данных</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf>
+      <StandardDataType rdf:ID="StandardDataType_1">
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:isSynonymOf rdf:resource="#StandardDataType_1"/>
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Standard Data Type</concept:hasTitle>
+      </StandardDataType>
+    </concept:isSynonymOf>
+  </StandardDataType>
+  <AlgorithmicLanguages rdf:ID="AlgorithmicLanguages_16">
+    <concept:isSynonymOf>
+      <AlgorithmicLanguages rdf:ID="AlgorithmicLanguages_1">
+        <concept:hasTitle xml:lang="ru">Алгоритмические языки программирования высокого уровня</concept:hasTitle>
+        <hasTitle xml:lang="en">Algorithmic Languages</hasTitle>
+        <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+        <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >AlgorithmicLanguages</concept:hasConceptName>
+        <concept:isSynonymOf rdf:resource="#AlgorithmicLanguages_1"/>
+      </AlgorithmicLanguages>
+    </concept:isSynonymOf>
+    <hasTitle xml:lang="ru">Алгоритмические языки</hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AlgorithmicLanguages</concept:hasConceptName>
+    <concept:hasTitle xml:lang="ru">Алгоритмические языки программирования</concept:hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+  </AlgorithmicLanguages>
+  <Structure rdf:ID="Structure_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Структура</concept:hasTitle>
+    <concept:isSynonymOf>
+      <Structure rdf:ID="Structure_1">
+        <concept:isSynonymOf rdf:resource="#Structure_1"/>
+        <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Structure</concept:hasTitle>
+      </Structure>
+    </concept:isSynonymOf>
+  </Structure>
+  <Int rdf:ID="Int_4">
+    <concept:hasTitle xml:lang="de">Ganze Zahl</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#de"/>
+    <concept:isSynonymOf rdf:resource="#Int_1"/>
+  </Int>
+  <StructuredProgramming rdf:ID="StructuredProgramming_8">
+    <concept:isSynonymOf rdf:resource="#StructuredProgramming_1"/>
+    <concept:hasTitle xml:lang="ru">Технология структурного программирования</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </StructuredProgramming>
+  <Variables rdf:ID="Variables_3">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Variable</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Variables_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#de"/>
+  </Variables>
+  <Float rdf:ID="Float_1">
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Float</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Float_1"/>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+  </Float>
+  <Unsigned rdf:ID="Unsigned_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Беззнаковое</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Unsigned_1"/>
+  </Unsigned>
+  <Enum rdf:ID="Enum_1">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <hasTitle xml:lang="en">Enum</hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+    <concept:hasTitle xml:lang="en">Enum</concept:hasTitle>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enum</concept:hasConceptName>
+    <concept:isSynonymOf rdf:resource="#Enum_1"/>
+  </Enum>
+  <ProgrammingStrategies rdf:ID="ProgrammingStrategies_1">
+    <concept:hasTitle xml:lang="ru">Технологии программирования</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf rdf:resource="#ProgrammingStrategies_1"/>
+  </ProgrammingStrategies>
+  <Enum rdf:ID="Enum_2">
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enum</concept:hasConceptName>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle xml:lang="ru">Перечисление</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Enum_1"/>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#eng"/>
+    <hasTitle xml:lang="en"></hasTitle>
+  </Enum>
+  <Operators rdf:ID="Operators_2">
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Operators</concept:hasConceptName>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <hasTitle xml:lang="ru">Операторы</hasTitle>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+    <concept:hasTitle xml:lang="en">Operator</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Operators_1"/>
+  </Operators>
+  <Variables rdf:ID="Variables_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:isSynonymOf rdf:resource="#Variables_1"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Переменная</concept:hasTitle>
+  </Variables>
+  <String rdf:ID="String_1">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >String</concept:hasConceptName>
+    <concept:isSynonymOf rdf:resource="#String_1"/>
+    <concept:hasTitle xml:lang="ru">Строка</concept:hasTitle>
+  </String>
+  <Float rdf:ID="Float_2">
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <concept:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Число с плавающей точкой</concept:hasTitle>
+    <concept:isSynonymOf rdf:resource="#Float_1"/>
+  </Float>
+  <AlgorithmicLanguages rdf:ID="AlgorithmicLanguages_17">
+    <concept:isSynonymOf rdf:resource="#AlgorithmicLanguages_1"/>
+    <concept:hasConceptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AlgorithmicLanguages</concept:hasConceptName>
+    <hasLanguage rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#rus"/>
+    <concept:hasTitle xml:lang="en">Algorithmic Languages</concept:hasTitle>
+    <concept:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <hasTitle xml:lang="ru">Алгоритмические языки прораммирования высокого уровня</hasTitle>
+  </AlgorithmicLanguages>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 2.2, Build 307)  http://protege.stanford.edu -->

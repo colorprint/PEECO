@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain">
+        <rdfs:comment>Describes data domain of discipline</rdfs:comment>
+        <versionIRI rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain/1.0.0.owl"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#dependsOn -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#dependsOn">
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#hasCompetence -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#hasCompetence">
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#DataDomain"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#hasComplexity -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#hasComplexity">
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#hasHierarchicalRelation -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#hasHierarchicalRelation">
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Concept"/>
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Concept"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#hasLanguage -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#hasLanguage">
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Language"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#includes -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#includes">
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#is -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#is">
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Concept"/>
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Concept"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#isSynonym -->
+
+    <ObjectProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#isSynonym">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:range rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#hasTitle -->
+
+    <DatatypeProperty rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#hasTitle">
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:domain rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#DataDomain"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Ability -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Ability">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Competence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Complexity -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Concept -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Concept">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#DataDomain -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#DataDomain"/>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#ICompetence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#ICompetence">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#UCompetence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Language -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Language"/>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#ONKCompetence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#ONKCompetence">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#UCompetence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#PCompetence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#PCompetence">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#SLKCompetence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#SLKCompetence">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#UCompetence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Skill -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Skill">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </Class>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#UCompetence -->
+
+    <Class rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#UCompetence">
+        <rdfs:subClassOf rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Competence"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#0 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#0">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#10 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#10">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#100 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#100">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#20 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#20">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#30 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#30">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#40 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#40">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#50 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#50">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#60 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#60">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#70 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#70">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#80 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#80">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#90 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#90">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Complexity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#English -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#English">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Language"/>
+        <rdfs:comment xml:lang="en">English language</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#German -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#German">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Language"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/discipline-data-domain#Russian -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/discipline-data-domain#Russian">
+        <rdf:type rdf:resource="http://owl.vstu.org/PEECO/discipline-data-domain#Language"/>
+        <rdfs:comment xml:lang="ru">Русский язык</rdfs:comment>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

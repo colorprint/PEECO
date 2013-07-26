@@ -1,0 +1,223 @@
+<rdf:RDF
+    xmlns:ER="http://www.vstu.org/onto/ER/20060408/ER.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.vstu.org/onto/resources/20060408/repository.owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:LM="http://www.vstu.org/onto/LM/20060408/LM.owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:domain="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#"
+  xml:base="http://www.vstu.org/onto/resources/20060408/repository.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl"/>
+    <owl:imports rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl"/>
+    <owl:imports rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl"/>
+  </owl:Ontology>
+  <ER:CO rdf:ID="CO_1">
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#StandardDataType_2"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.vstu.org/stud/course/AL/lection3_1.xml</ER:hasOriginalURI>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasTitle xml:lang="ru">Типы данных</ER:hasTitle>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.vstu.org/stud/course/AL/lection3_1.xml</ER:hasURI>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Double_1"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Long_1"/>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Variables_1"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Unsigned_1"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Short_1"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#advanced"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Int_1"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Float_1"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Char_1"/>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VSTU</ER:hasAuthor>
+  </ER:CO>
+  <ER:CO rdf:ID="CO_10">
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_2"/>
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Массив как производный тип данных</ER:hasTitle>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ermak.cs.nstu.ru/cprog/book_old/bk12-07.htm</ER:hasURI>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Constants_2"/>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NSTU</ER:hasAuthor>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Variables_2"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ermak.cs.nstu.ru/cprog/book_old/bk12-07.htm</ER:hasOriginalURI>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Example"/>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+  </ER:CO>
+  <ER:CO rdf:ID="CO_3">
+    <ER:hasCF>
+      <ER:Reference rdf:ID="Reference_1">
+        <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://www.vstu.ru</ER:hasURI>
+        <ER:hasTargetObject>
+          <ER:CO rdf:ID="CO_4">
+            <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://en.wikipedia.org/wiki/Constant</ER:hasOriginalURI>
+            <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Wikipedia</ER:hasAuthor>
+            <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+            <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Constants_1"/>
+            <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+            <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+            <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://en.wikipedia.org/wiki/Constant</ER:hasURI>
+            <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+            <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+            <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Constant</ER:hasTitle>
+          </ER:CO>
+        </ER:hasTargetObject>
+        <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+        <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+        <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Constants</ER:hasTitle>
+        <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Constants_1"/>
+        <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+      </ER:Reference>
+    </ER:hasCF>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#en"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Variable</ER:hasTitle>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Variables_1"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Variable</ER:hasOriginalURI>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Variable</ER:hasURI>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Wikipedia</ER:hasAuthor>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+  </ER:CO>
+  <ER:Definition rdf:ID="CO_9">
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://encycl.accoona.ru/?id=1582</ER:hasOriginalURI>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Алгоритмический язык</ER:hasTitle>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#AlgorithmicLanguages_1"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Accoona.ru</ER:hasAuthor>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://encycl.accoona.ru/?id=1582</ER:hasURI>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#CO"/>
+  </ER:Definition>
+  <ER:CO rdf:ID="CO_2">
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Enum_1"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.vstu.org/stud/course/AL/lection3_2.xml</ER:hasOriginalURI>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Variables_2"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Enum_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Union_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Structure_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_2"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#MultidimensionalArray_2"/>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.vstu.org/stud/course/AL/lection3_2.xml</ER:hasURI>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasTitle xml:lang="ru">Структурированные типы данных: массивы, структуры, объединения, перечислимые типы</ER:hasTitle>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#AlgorithmicLanguages_1"/>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VSTU</ER:hasAuthor>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Example"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Union_1"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Structure_1"/>
+  </ER:CO>
+  <ER:Reference rdf:ID="Reference_8">
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Типы данных</ER:hasTitle>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.vstu.ru</ER:hasURI>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_2"/>
+    <ER:hasTargetObject>
+      <ER:Description rdf:ID="CO_6">
+        <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BF_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85</ER:hasOriginalURI>
+        <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#AlgorithmicLanguages_16"/>
+        <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BF_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85</ER:hasURI>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Char_2"/>
+        <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+        <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Тип данных</ER:hasTitle>
+        <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Float_2"/>
+        <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Wikipedia</ER:hasAuthor>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_2"/>
+        <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#CO"/>
+        <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#advanced"/>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_2"/>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#String_1"/>
+        <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+        <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Enum_2"/>
+        <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+      </ER:Description>
+    </ER:hasTargetObject>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#advanced"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Example"/>
+  </ER:Reference>
+  <ER:CO rdf:ID="CO_11">
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#advanced"/>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NSTU</ER:hasAuthor>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ermak.cs.nstu.ru/cprog/book_old/bk41-13.htm</ER:hasURI>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Char_2"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ermak.cs.nstu.ru/cprog/book_old/bk41-13.htm</ER:hasOriginalURI>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Array_2"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#medium"/>
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Строки, массивы символов и указатели Char*</ER:hasTitle>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Description"/>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#String_1"/>
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+  </ER:CO>
+  <ER:CO rdf:ID="CO_5">
+    <ER:hasLanguage rdf:resource="http://www.vstu.org/onto/concept/20060408/concept.owl#ru"/>
+    <ER:hasURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ru.wikipedia.org/wiki/Переменная</ER:hasURI>
+    <ER:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Wikipedia</ER:hasAuthor>
+    <ER:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Переменная</ER:hasTitle>
+    <rdf:type rdf:resource="http://www.vstu.org/onto/ER/20060408/ER.owl#Definition"/>
+    <ER:hasCF rdf:resource="#Reference_8"/>
+    <ER:hasPrerequisite rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#DataType_2"/>
+    <ER:hasOriginalURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://ru.wikipedia.org/wiki/Переменная</ER:hasOriginalURI>
+    <ER:hasConcept rdf:resource="http://www.vstu.org/onto/domain/20060408/AlgorithmicLanguages.owl#Variables_2"/>
+    <ER:hasExpirience rdf:resource="http://www.vstu.org/onto/LM/20060408/LM.owl#beginner"/>
+  </ER:CO>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 2.2, Build 311)  http://protege.stanford.edu -->
