@@ -42,6 +42,37 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB1">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать, тестировать и отлаживать одномодульные консольные приложения в среде разработки Microsoft Visual Studio с использованием библиотечных функций ввода/вывода, математических функций и функций для работы со строками и памятью</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_1"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_11"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_12"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_16"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_17"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_18"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_19"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_2"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_20"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_24"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_25"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_26"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_27"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_28"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_29"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_30"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_32"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_36"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_37"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_38"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_39"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_4"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_40"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_41"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_42"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_43"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_44"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_45"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_6"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_7"/>
     </NamedIndividual>
     
 
@@ -51,6 +82,13 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать собственные функции</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_14"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_15"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_21"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_22"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_23"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_27"/>
     </NamedIndividual>
     
 
@@ -105,6 +143,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_14">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">передавать в функцию скалярные данные, массивы, подмассивы, элементы массивов</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
     </NamedIndividual>
     
 
@@ -114,6 +153,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_15">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">передавать параметр в функцию по адресу</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
     </NamedIndividual>
     
 
@@ -123,6 +163,10 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_16">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать программы работы со строками</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_14"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_15"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_2"/>
     </NamedIndividual>
     
 
@@ -141,6 +185,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_18">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">проверять работоспособность программы</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_17"/>
     </NamedIndividual>
     
 
@@ -168,6 +213,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_20">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">находить и исправлять ошибки в программе</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_19"/>
     </NamedIndividual>
     
 
@@ -177,6 +223,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_21">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">декомпозировать разрабатываемую программу на функции</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
     </NamedIndividual>
     
 
@@ -186,6 +233,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_22">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">определять отношения между функциями и строить дерево вызовов</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_21"/>
     </NamedIndividual>
     
 
@@ -195,6 +243,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_23">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать программу из нескольких функций</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_21"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_22"/>
     </NamedIndividual>
     
 
@@ -213,6 +263,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_25">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">обращаться к полям структур и объединений по значению и адресу</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_24"/>
     </NamedIndividual>
     
 
@@ -231,6 +282,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_27">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать простейшие рекурсивные функции</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
     </NamedIndividual>
     
 
@@ -249,6 +301,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_29">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">вызывать динамические и статические методы</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
     </NamedIndividual>
     
 
@@ -271,11 +324,158 @@
     
 
 
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_31 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_31">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">объявлять и описывать классы</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_32 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_32">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">использовать квалифицированное и неквалифицированное обращение к свойствам (методам)</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_33 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_33">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">создать диалоговое окно с использованием элементов управления и расположения</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_34 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_34">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать слоты, работающие с элементами управления</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_33"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_35 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_35">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">реагировать на действия пользователя с помощью связей сигнал-стоп</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_34"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_36 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_36">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">составлять заголовки и описывать перегруженные операции как методы класса и глобальные функции</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_37 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_37">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">объявлять дружественные функции</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_13"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_38 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_38">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">динамически создавать и уничтожать объекты (массивы объектов)</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_39 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_39">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">выбирать контейнеры для решаемой задачи</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
     <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_4 -->
 
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_4">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">записывать константы, объявлять переменные скалярных типов, записывать арифметические выражения на языке Си</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_40 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_40">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">создавать и использовать контейнеры и итераторы</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_41 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_41">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">создавать файловый диалог</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_42 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_42">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">открыть файл и создать поток ввода/вывода в него</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_43 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_43">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">вводить и выводить информацию из/в потоков данных и текстов</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_42"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_44 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_44">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">перегружать операции ввода/вывода в поток для собственных классов</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_43"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#AB2_45 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB2_45">
+        <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">определять уровни доступа элементов класса при различных видах наследования</discipline-data-domain:hasTitle>
+        <discipline-data-domain:dependsOn rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_31"/>
     </NamedIndividual>
     
 
@@ -330,6 +530,9 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB3">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать, тестировать и отлаживать многомодульные приложения с графическим интерфейсом пользователя в среде разработки Microsoft Visual Studio с использованием библиотеки QT Library</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_33"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_34"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_35"/>
     </NamedIndividual>
     
 
@@ -339,6 +542,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB4">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">составлять внешнюю спецификацию программы</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_3"/>
     </NamedIndividual>
     
 
@@ -348,6 +552,12 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB5">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разрабатывать эффективные алгоритмы и структуры данных программ</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_10"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_21"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_22"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_5"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_8"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_9"/>
     </NamedIndividual>
     
 
@@ -357,6 +567,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#AB6">
         <rdf:type rdf:resource="&discipline-data-domain;Ability"/>
         <discipline-data-domain:hasTitle xml:lang="ru">использовать библиотечные функции и классы при разработке программ</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_16"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_2"/>
     </NamedIndividual>
     
 
@@ -366,6 +578,15 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN1">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">принципы программирования на алгоритмических языках высокого уровня</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_1"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_11"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_13"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_14"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_2"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_3"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_4"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_6"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_9"/>
     </NamedIndividual>
     
 
@@ -375,6 +596,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">процесс разработки программы, способы построения и записи алгоритмов</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_3"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_4"/>
     </NamedIndividual>
     
 
@@ -451,11 +674,83 @@
     
 
 
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_17 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_17">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">особенности конструкторов и деструкторов как специальных методов класса</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_18 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_18">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">различные уровни доступа к свойствам и методам класса</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_19 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_19">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">основные органы управления</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
     <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_2 -->
 
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_2">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">Критерии качества программы</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_20 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_20">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">объектная модель программы с графическим интерфейсом</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_21 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_21">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">особенности использования константных объектов и методов</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_22 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_22">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">основные виды контейнеров и итераторов, их свойства, операции над ними</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_23 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_23">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">потоковая модель работы с файлами</discipline-data-domain:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://owl.vstu.org/PEECO/examples/programming#KN2_24 -->
+
+    <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN2_24">
+        <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
+        <discipline-data-domain:hasTitle xml:lang="ru">свойства и виды наследования</discipline-data-domain:hasTitle>
     </NamedIndividual>
     
 
@@ -528,6 +823,9 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN3">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">система типов языков Си и Си++</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_12"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_5"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_7"/>
     </NamedIndividual>
     
 
@@ -537,6 +835,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN4">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">множество операций языков Си и Си++</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_5"/>
     </NamedIndividual>
     
 
@@ -546,6 +845,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN5">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">система операторов языков Си и Си++</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_6"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_8"/>
     </NamedIndividual>
     
 
@@ -555,6 +856,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN6">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">способы работы с подпрограммами на языках Си и Си++</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_10"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_9"/>
     </NamedIndividual>
     
 
@@ -564,6 +867,15 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN7">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">способы работы с классами и объектами языка Си++</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_10"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_15"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_16"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_17"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_18"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_21"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_22"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_23"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_24"/>
     </NamedIndividual>
     
 
@@ -573,6 +885,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN8">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">понятие графического интерфейса пользователя и принципы его построения</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_19"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_20"/>
     </NamedIndividual>
     
 
@@ -582,6 +896,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#KN9">
         <rdf:type rdf:resource="&discipline-data-domain;Concept"/>
         <discipline-data-domain:hasTitle xml:lang="ru">понятие программы, управляемой событиями, и принципы ее построения</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_20"/>
     </NamedIndividual>
     
 
@@ -668,6 +983,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#SK1">
         <rdf:type rdf:resource="&discipline-data-domain;Skill"/>
         <discipline-data-domain:hasTitle xml:lang="ru">разработка тестовых примеров для разрабатываемой программы</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_17"/>
     </NamedIndividual>
     
 
@@ -677,6 +993,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#SK2">
         <rdf:type rdf:resource="&discipline-data-domain;Skill"/>
         <discipline-data-domain:hasTitle xml:lang="ru">чтение и запись алгоритма в виде блок-схем или словесной форме</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_5"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2"/>
     </NamedIndividual>
     
 
@@ -686,6 +1004,8 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#SK3">
         <rdf:type rdf:resource="&discipline-data-domain;Skill"/>
         <discipline-data-domain:hasTitle xml:lang="ru">отладка собственных программ и программ, разработанных другими программистами</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_20"/>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#KN2_11"/>
     </NamedIndividual>
     
 
@@ -695,6 +1015,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#SK4">
         <rdf:type rdf:resource="&discipline-data-domain;Skill"/>
         <discipline-data-domain:hasTitle xml:lang="ru">оформление кода и документирование программы в соответствии с заданными стандартами</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_3"/>
     </NamedIndividual>
     
 
@@ -704,6 +1025,7 @@
     <NamedIndividual rdf:about="http://owl.vstu.org/PEECO/examples/programming#SK5">
         <rdf:type rdf:resource="&discipline-data-domain;Skill"/>
         <discipline-data-domain:hasTitle xml:lang="ru">использование справочной службы по языку программирования и используемым библиотекам, поиск информации о библиотечных функциях и классах</discipline-data-domain:hasTitle>
+        <discipline-data-domain:includes rdf:resource="http://owl.vstu.org/PEECO/examples/programming#AB2_2"/>
     </NamedIndividual>
 </rdf:RDF>
 
